@@ -76,3 +76,7 @@ export const query = graphql`
 `
 
 ```
+
+## Credits
+
+Most of this plugin was taken from the [gatsby-plugin-apollo-client](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-multiple-providers/plugins/gatsby-plugin-apollo-client) within the using-multiple-providers example site.
