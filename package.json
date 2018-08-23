@@ -4,7 +4,9 @@
   "description": "Gatsby plugin which injects a Shopify Apollo Client into the browser.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir .",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,9 @@
     "apollo-client": "^2.4.0",
     "apollo-link-context": "^1.0.8",
     "apollo-link-http": "^1.5.4",
-    "react": "^16.4.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "react-apollo": "^2.1.11"
   }
 }
