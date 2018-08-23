@@ -1,0 +1,39 @@
+{
+  "name": "gatsby-plugin-apollo-shopify",
+  "version": "1.0.0",
+  "description": "Gatsby plugin which injects a Shopify Apollo Client into the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gil--/gatsby-plugin-apollo-client.git"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "gatsby-plugin",
+    "gatsbyjs",
+    "gatsby",
+    "shopify",
+    "shopify-storefront"
+  ],
+  "author": "Gil Greenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gil--/gatsby-plugin-apollo-client/issues"
+  },
+  "homepage": "https://github.com/gil--/gatsby-plugin-apollo-client#readme",
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.2.8",
+    "apollo-client": "^2.4.0",
+    "apollo-link-context": "^1.0.8",
+    "apollo-link-http": "^1.5.4",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11"
+  }
+}
