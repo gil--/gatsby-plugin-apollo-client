@@ -14,6 +14,10 @@ plugins: [
     options: {
       shopName: `gatsbyjs`,
       accessToken: `48bbac10dae7225fe4e36a545d1b9b2f`,
+      // Optionally set the API version you want to use. For a list of available API versions,
+      // see: https://shopify.dev/concepts/about-apis/versioning/release-notes
+      // Defaults to unspecified/oldest stable
+      apiVersion: "2020-07",
     },
   },
 ]

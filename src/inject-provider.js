@@ -8,8 +8,9 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 export default ({ element }, pluginOptions) => {
     const shopName = pluginOptions.shopName || {}
     const accessToken = pluginOptions.accessToken || {}
+    const apiPath = pluginOptions.apiVersion ? `api/${pluginOptions.apiVersion}/graphql.json` : 'api/graphql';
 
-    const httpLink = createHttpLink({ uri: `https://${shopName}.myshopify.com/api/graphql` });
+    const httpLink = createHttpLink({ uri: `https://${shopName}.myshopify.com/${apiPath}`});
 
     const middlewareLink = setContext(() => ({
         headers: {
